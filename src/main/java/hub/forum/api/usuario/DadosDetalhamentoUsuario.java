@@ -2,7 +2,7 @@ package hub.forum.api.usuario;
 
 import hub.forum.api.endereco.Endereco;
 
-public record DadosDetalhamentoUsuario(Long id, String nome, String email, Curso curso, Endereco endereco) {
+public record DadosDetalhamentoUsuario(Long id, String nome, String email, String curso, Endereco endereco) {
 
 
     public DadosDetalhamentoUsuario(Usuario usuario){

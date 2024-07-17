@@ -19,8 +19,7 @@ public class Usuario {
     private Long id;
     private String nome;
     private String email;
-    @Enumerated(EnumType.STRING)
-    private Curso curso;
+    private String curso;
     @Embedded
     private Endereco endereco;
     private Boolean ativo;
@@ -32,6 +31,7 @@ public class Usuario {
         this.curso = dados.curso();
         this.endereco = new Endereco(dados.endereco());
     }
+
 
     public void atualizarInformcoes(DadosAtualizacaoUsuarios dados) {
         if (dados.nome() != null) {

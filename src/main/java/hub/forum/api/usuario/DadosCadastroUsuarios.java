@@ -14,7 +14,7 @@ public record DadosCadastroUsuarios(
         @Email
         String email,
 
-        Curso curso,
+        String curso,
 
         @NotNull
         @Valid
