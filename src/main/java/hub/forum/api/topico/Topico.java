@@ -21,8 +21,6 @@ public class Topico {
     private String mensagem;
     private LocalDateTime data;
     private boolean status;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "curso_id")
     private String curso;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
